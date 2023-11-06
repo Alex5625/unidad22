@@ -34,6 +34,7 @@ fn leer_archivo ( nombre_archivo : &str ) -> Result <() , Error> {
             // dentro de la linea, si no es un f32 que se peued hacer parse(), pasa a la variable nombre.
             match linea.parse::<f32>() {
                 Ok(num) => suma += num,
+                //se usa un .to_string() pq el archivo lo tira como &str
                 Err(_) => nombre = linea.to_string(),
             }
         }
