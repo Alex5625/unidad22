@@ -40,9 +40,9 @@ fn leer_archivo ( nombre_archivo : &str ) -> Result <() , Error> {
 
         let promedio :f32 = suma  / 6 as f32;
         if promedio <= 4.0 {
-            println!("El alumno {} reprobó con una nota de {}\n",nombre,promedio);
+            println!("El alumno {} reprobó con un promedio de {}\n",nombre,promedio);
         } else {
-            println!("El alumno {} aprobó con una nota de {}\n",nombre,promedio);
+            println!("El alumno {} aprobó con un promedio de {}\n",nombre,promedio);
         }
 
     }
