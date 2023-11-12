@@ -4,7 +4,7 @@ use std::io::{ BufRead , BufReader , Error };
 fn main() {
 
     match leer_archivo("notas1.txt") {
-        Ok(_) => println!("termino el codigo ctm"),
+        Ok(_) => println!("termino el codigo ***"),
         Err(_) => panic!(),
     }
     
